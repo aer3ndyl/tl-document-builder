@@ -29,34 +29,46 @@ namespace tl_document_builder
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.ProjName = new System.Windows.Forms.TextBox();
+            this.ProjNameLabel = new System.Windows.Forms.Label();
+            this.agreeButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox1
+            // ProjName
             // 
-            this.textBox1.Location = new System.Drawing.Point(36, 48);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(403, 22);
-            this.textBox1.TabIndex = 0;
+            this.ProjName.Location = new System.Drawing.Point(36, 48);
+            this.ProjName.Name = "ProjName";
+            this.ProjName.Size = new System.Drawing.Size(403, 22);
+            this.ProjName.TabIndex = 0;
             // 
-            // label1
+            // ProjNameLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(32, 20);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(215, 20);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Name of your project here...";
+            this.ProjNameLabel.AutoSize = true;
+            this.ProjNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ProjNameLabel.Location = new System.Drawing.Point(32, 20);
+            this.ProjNameLabel.Name = "ProjNameLabel";
+            this.ProjNameLabel.Size = new System.Drawing.Size(215, 20);
+            this.ProjNameLabel.TabIndex = 1;
+            this.ProjNameLabel.Text = "Name of your project here...";
+            // 
+            // agreeButton
+            // 
+            this.agreeButton.Location = new System.Drawing.Point(446, 48);
+            this.agreeButton.Name = "agreeButton";
+            this.agreeButton.Size = new System.Drawing.Size(24, 22);
+            this.agreeButton.TabIndex = 2;
+            this.agreeButton.Text = "✓";
+            this.agreeButton.UseVisualStyleBackColor = true;
+            this.agreeButton.Click += new System.EventHandler(this.agreeButton_Click);
             // 
             // ProjectCreating
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(482, 103);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(385, 82);
+            this.Controls.Add(this.agreeButton);
+            this.Controls.Add(this.ProjNameLabel);
+            this.Controls.Add(this.ProjName);
             this.MaximumSize = new System.Drawing.Size(500, 150);
             this.MinimumSize = new System.Drawing.Size(500, 150);
             this.Name = "ProjectCreating";
@@ -68,7 +80,8 @@ namespace tl_document_builder
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox ProjName;
+        private System.Windows.Forms.Label ProjNameLabel;
+        private System.Windows.Forms.Button agreeButton;
     }
 }

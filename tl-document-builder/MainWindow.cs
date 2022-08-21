@@ -4,7 +4,7 @@ using System.Windows.Forms;
 
 namespace tl_document_builder
 {
-    static class Program
+    static class MainWindow
     {
         [STAThread]
         static void Main()
