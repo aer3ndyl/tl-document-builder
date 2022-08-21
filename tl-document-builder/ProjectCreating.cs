@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace tl_document_builder
 {
-    public partial class Form1 : Form
+    public partial class ProjectCreating : Form
     {
-        public Form1()
+        public ProjectCreating()
         {
             InitializeComponent();
         }
